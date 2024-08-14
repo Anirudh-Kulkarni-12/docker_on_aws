@@ -20,6 +20,7 @@ module "vpc_module" {
 module "ec2_module" {
   source        = "./ec2"
   instance_type = "t3.micro"
+  
 }
 
 
