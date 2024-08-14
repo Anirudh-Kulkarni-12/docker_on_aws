@@ -11,3 +11,8 @@ terraform {
 provider "aws" {
   region = "ap-south-2"
 }
+
+module "vpc_module" {
+  source     = "./vpc"
+  cidr_block = "10.0.0.0/16"
+}
